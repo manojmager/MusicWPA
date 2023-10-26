@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="shortcut icon" href="#">
+
+    <!-- manifest-link -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="theme-color" content="#333333">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="My App" />
+    <meta name="theme-color" content="#FF0000" />
+
+    <!-- css-link -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- region jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- endregion -->
+</head> 
+
+<body>
+    <header>  
+        <img id="logo" src="img/headphone.png" alt="logo">
+        <h1>My Music</h1>
+    </header>
+
+    <main id="main">
+        <div class="new-songs">
+            <div class="container">
+                <div class="content">
+                    <div class="cont-title">
+                        <h3>NEW SONGS</h3>
+                    </div>
+                    <div class="form-controller">
+                        <div class="input-field">
+                            <input type="text" id="title" placeholder="Title">
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" id="artist" placeholder="Artist">
+                        </div>
+                        <div class="btn">
+                            <button type="submit" id="add-song">add</button>
+                        </div>
+                    </div>
+                    <div class="message-box" id="message-box">
+                        <h3>Successfully added!!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-of-songs">
+            <div class="container">
+                <div class="content">
+                    <div class="cont-title">
+                        <h3>LIST OF SONGS</h3>
+                    </div>
+                    <div class="list-song" id="list-song-container">
+                        <!-- List of Songs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+
+    <script type="module" src="js/database.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

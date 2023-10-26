@@ -1,0 +1,185 @@
+/* -------------------------------- GENERAL STYLING --------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 1;
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 25px);
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.content{
+    padding: 10px;
+}
+.cont-title{
+    text-align: left;
+    padding: 15px;
+}
+
+.input-field {
+    --gap: 0.5em;
+    padding: 5px;
+}
+
+input {
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0 0 0.875em 0;
+    width: 90%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.msg::placeholder{
+    color: red;
+}
+
+.btn {
+    margin: 10px 50px;
+}
+
+#add-song {
+    background: deepskyblue;
+    color: black;
+    cursor: pointer;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.list-song{
+    max-height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Example CSS styles for the classes used in the JavaScript code */
+.music-item {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+}
+
+.music-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.song-details {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.song-title {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.artist {
+    padding: 5px;
+    color: grey;
+}
+
+.likes-container {
+    width: 20%;
+    text-align: right;
+    padding-left: 10px;
+}
+
+.like-counts {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.like-button,
+.delete-button {
+    padding: 5px;
+    font-size: 20px;
+    background: deepskyblue;
+    color: black;
+    cursor: pointer;
+    font-size: 0.875em;
+    outline: none;
+    border-radius: 5px;
+}
+
+.message-box{
+    background-color: darkseagreen;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+.display-message-box{
+    display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px 20px 20px;
+    }
+    .new-songs, .list-of-songs{
+        width: 50%;
+        padding-left: 50px;
+        padding-right: 50px ;
+    }
+
+    input {
+        font-size: 1.200em;
+        letter-spacing: 1.5px;
+        padding: 0 0 1.875em 0;
+    }
+
+    .btn {
+        margin: 30px 70px;
+    }
+    
+}
